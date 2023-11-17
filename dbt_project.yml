@@ -40,3 +40,13 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    raw:
+      schema: raw
+      materialized: view
+    transform:
+      schema: transform
+      materialized: table
+
+seeds:
+  schema: raw
+  
